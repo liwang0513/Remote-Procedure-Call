@@ -21,9 +21,11 @@ if (isset($_POST['submit'])) {
 		default:
 			http_response_code(400);
 	}
+	
+	echo json_encode($student_info);
 }
 
-echo json_encode($student_info);
+
 
 ?>		
 
